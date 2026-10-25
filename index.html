@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/logo.png"><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"><title>Browser Lock - lock your whole browser with one password</title><meta name="description" content="Download Browser Lock, a free offline Chrome extension. Unzip it and load it in Chrome in under a minute."></head><body>
+<header class="bar"><a class="brand" href="#"><img src="assets/logo.png" alt="">Browser Lock</a><nav><a href="#install">Install</a><a href="#demo">Demo</a><a href="#faq">FAQ</a></nav></header>
+<main>
+<section class="hero"><div><h1>Lock your whole browser with one password.</h1><p class="lead">Browser Lock covers every open tab with a lock screen until you type your password. Free, offline, no account.</p>
+<div class="cta"><a class="dl" href="downloads/Browser-Lock.zip" download>Download Browser-Lock.zip</a><a class="ghost" href="demo.html">Try the live demo</a></div></div><svg class="pl" viewBox="0 0 120 150" role="img" aria-label="Padlock"><path class="sh" d="M32 72V48a28 28 0 0 1 56 0v24"/><rect class="bd" x="14" y="70" width="92" height="72" rx="14"/><circle cx="60" cy="98" r="9"/><rect x="56" y="100" width="8" height="20" rx="3"/></svg></section>
+
+<section id="install"><h2>Install in three steps</h2>
+<ol class="steps">
+<li><div><h3>Download the zip</h3><p>Press the download button above. You get one file: <code>Browser-Lock.zip</code>.</p></div></li>
+<li><div><h3>Unzip it</h3><p>Right-click the file and choose Extract All (on Mac, double-click it). You now have a folder called <code>Browser-Lock</code>. Keep it somewhere safe. Chrome runs the extension from this folder, so do not delete it.</p></div></li>
+<li><div><h3>Load it in Chrome</h3><ul><li>Open <code>chrome://extensions</code> <button class="cp" data-copy="chrome://extensions">Copy</button></li><li>Turn on <b>Developer mode</b> (top right).</li><li>Click <b>Load unpacked</b> and pick the <code>Browser-Lock</code> folder, the one with <code>manifest.json</code> inside.</li></ul><p class="mut">On Edge or Brave, open <code>edge://extensions</code> or <code>brave://extensions</code> instead.</p></div></li>
+</ol>
+<p>That's it. The settings page opens by itself so you can choose your password. Pin the extension from the puzzle icon to lock with one click, or press <b>Alt+L</b>.</p>
+<p class="mut">If Chrome shows a "Disable developer mode extensions" pop-up when it starts, dismiss it without choosing Disable.</p></section>
+
+<section id="demo"><div class="prev"><div><h2>See it working before you install</h2><p>The demo is a Chrome window you can click. Set a password, watch every tab lock, then unlock it.</p><a class="dl" href="demo.html">Open the live demo</a></div><img src="assets/lock1.png" alt="Browser Lock screen with a steel padlock" loading="lazy"></div></section>
+
+<section><dl class="ft"><div><dt>Locks every tab</dt><dd>All open tabs and new tabs show the lock screen. Your pages come back when you unlock.</dd></div><div><dt>Locks on startup</dt><dd>Close all windows and reopen Chrome: it asks for your password first.</dd></div><div><dt>Forgot your password?</dt><dd>Answer your 3 security questions to get back in. No email, no internet.</dd></div><div><dt>Auto-lock</dt><dd>Lock instantly with Alt+L or the toolbar icon, or set an idle timer in settings.</dd></div></dl></section>
+
+<section id="faq"><h2>Questions</h2>
+<details><summary>Why isn't it in the Chrome Web Store?</summary><p>It is shared directly as a zip for now. Loading an unpacked extension is the normal way Chrome lets you run one that isn't from the store.</p></details>
+<details><summary>Does it send my data anywhere?</summary><p>No. It works offline and keeps only a salted hash of your password inside your own Chrome profile.</p></details>
+<details><summary>Is it a vault?</summary><p>No. It stops casual access. Someone who can open chrome://extensions can remove it, so treat it as a privacy screen.</p></details></section>
+</main>
+<footer class="bar"><span class="mut">Browser Lock, MIT licence</span><a href="#install" class="mut">Back to install steps</a></footer>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)})</script>
+</body></html>
