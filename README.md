@@ -7,7 +7,7 @@ It works fully offline, needs no account, and never touches your Google account,
 This repository is the **website** for Browser Lock. People can download the extension from it, learn how to install it, and try a live demo without installing anything. It is a static site, built to be hosted on GitHub Pages.
 
 ---
-check browser lock site here : https://you-are-amazing.github.io/Browser-lock-site/
+check browser lock site here : https://okdarshann.github.io/Browser-lock-site/ 
 ---
 
 ## What the website has
